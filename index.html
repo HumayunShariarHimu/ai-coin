@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Coin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Coin</h1>
+    <p>Your AI Coin Balance: <span id="balance">1000</span> AIC</p>
+
+    <button id="connectWallet">Connect Wallet</button>
+    
+    <div id="walletInfo" style="display:none;">
+      <h2>Wallet Info</h2>
+      <p>Wallet Address: <span id="walletAddress">Not Connected</span></p>
+      <p>Balance: <span id="walletBalance">1000</span> AIC</p>
+    </div>
+
+    <div>
+      <input type="text" id="recipient" placeholder="Recipient Wallet Address">
+      <input type="number" id="amount" placeholder="Amount to Send">
+      <button id="sendTransaction">Send Transaction</button>
+    </div>
+
+    <div>
+      <h3>Admin Panel</h3>
+      <input type="number" id="mintAmount" placeholder="Amount to Mint" min="0">
+      <button id="mintCoins">Mint Coins</button>
+    </div>
+
+    <div id="transactionMessage" style="display:none;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
